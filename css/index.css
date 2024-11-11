@@ -686,19 +686,31 @@ footer {
     z-index: 10;
 }
 
-.language-selector select {
+/* Estilo del botón */
+.language-button {
     background: transparent;
     color: #F5F5F5;
     border: 1px solid #11ABB0;
     border-radius: 3px;
-    padding: 5px;
+    padding: 5px 15px;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
-.language-selector select:hover {
+/* Efecto hover */
+.language-button:hover {
     border-color: #159296;
+    background-color: rgba(17, 171, 176, 0.2);
+}
+
+/* Diseño responsive */
+@media (max-width: 600px) {
+    .language-button {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
 }
 
 
